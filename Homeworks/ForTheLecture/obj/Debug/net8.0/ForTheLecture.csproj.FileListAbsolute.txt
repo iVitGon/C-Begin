@@ -1,0 +1,14 @@
+C:\Users\Admin\OneDrive\Рабочий стол\GB\coding\Homeworks\ForTheLecture\bin\Debug\net8.0\ForTheLecture.exe
+C:\Users\Admin\OneDrive\Рабочий стол\GB\coding\Homeworks\ForTheLecture\bin\Debug\net8.0\ForTheLecture.deps.json
+C:\Users\Admin\OneDrive\Рабочий стол\GB\coding\Homeworks\ForTheLecture\bin\Debug\net8.0\ForTheLecture.runtimeconfig.json
+C:\Users\Admin\OneDrive\Рабочий стол\GB\coding\Homeworks\ForTheLecture\bin\Debug\net8.0\ForTheLecture.dll
+C:\Users\Admin\OneDrive\Рабочий стол\GB\coding\Homeworks\ForTheLecture\bin\Debug\net8.0\ForTheLecture.pdb
+C:\Users\Admin\OneDrive\Рабочий стол\GB\coding\Homeworks\ForTheLecture\obj\Debug\net8.0\ForTheLecture.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OneDrive\Рабочий стол\GB\coding\Homeworks\ForTheLecture\obj\Debug\net8.0\ForTheLecture.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive\Рабочий стол\GB\coding\Homeworks\ForTheLecture\obj\Debug\net8.0\ForTheLecture.AssemblyInfo.cs
+C:\Users\Admin\OneDrive\Рабочий стол\GB\coding\Homeworks\ForTheLecture\obj\Debug\net8.0\ForTheLecture.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Рабочий стол\GB\coding\Homeworks\ForTheLecture\obj\Debug\net8.0\ForTheLecture.dll
+C:\Users\Admin\OneDrive\Рабочий стол\GB\coding\Homeworks\ForTheLecture\obj\Debug\net8.0\refint\ForTheLecture.dll
+C:\Users\Admin\OneDrive\Рабочий стол\GB\coding\Homeworks\ForTheLecture\obj\Debug\net8.0\ForTheLecture.pdb
+C:\Users\Admin\OneDrive\Рабочий стол\GB\coding\Homeworks\ForTheLecture\obj\Debug\net8.0\ForTheLecture.genruntimeconfig.cache
+C:\Users\Admin\OneDrive\Рабочий стол\GB\coding\Homeworks\ForTheLecture\obj\Debug\net8.0\ref\ForTheLecture.dll
