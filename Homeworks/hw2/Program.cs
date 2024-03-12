@@ -1,5 +1,5 @@
 ﻿/*
- Напишите программу, которая принимает на вход число и проверяет, кратно ли оно одновременно 7 и 23.
+ 1. Напишите программу, которая принимает на вход число и проверяет, кратно ли оно одновременно 7 и 23.
 
 void NumMultiplicity23And7 (int a)
 {
@@ -23,8 +23,9 @@ NumMultiplicity23And7(number); // void метод
 
 */
 
-//  Напишите программу, которая принимает на вход координаты точки (X и Y),
+// 2.  Напишите программу, которая принимает на вход координаты точки (X и Y),
 // причём X ≠ 0 и Y ≠ 0 и выдаёт номер координатной четверти плоскости, в которой находится эта точка.
+/*
 
 void OnlyQuarter (int x, int y)
 {
@@ -60,3 +61,38 @@ Console.WriteLine("Введите значение y");
 int y1 = Convert.ToInt32(Console.ReadLine());
 
 OnlyQuarter(x1, y1);
+*/
+
+// 3. Напишите программу, которая принимает на вход целое число из отрезка [10, 99]
+// и показывает наибольшую цифру числа.
+
+
+void DecOrEd(int num)
+{
+    if(num >= 10 && num <= 99)
+    {
+        int dec = num / 10;
+        int ed = num % 10;
+        if (dec > ed)
+        {
+            System.Console.WriteLine($"{num} -> {dec}");
+
+        }
+        else
+        {
+            System.Console.WriteLine($"{num} -> {ed}");
+
+        }
+
+    }
+    else
+    {
+        System.Console.WriteLine("Введено некорректное число");
+    }
+}
+System.Console.WriteLine("Определение наибольшей цифры в числе");
+System.Console.WriteLine("Введите число от 10 до 99");
+int number = Convert.ToInt32(Console.ReadLine());
+
+
+DecOrEd(number);
