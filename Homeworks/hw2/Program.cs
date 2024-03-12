@@ -66,7 +66,7 @@ OnlyQuarter(x1, y1);
 // 3. Напишите программу, которая принимает на вход целое число из отрезка [10, 99]
 // и показывает наибольшую цифру числа.
 
-
+/*
 void DecOrEd(int num)
 {
     if(num >= 10 && num <= 99)
@@ -96,3 +96,62 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 
 DecOrEd(number);
+
+*/
+
+//Напишите программу, которая на вход принимает натуральное число N, а на выходе показывает его цифры через запятую.
+// 645 ->6,4,5    8->8    4567 ->4,5,6,7
+
+void SeparationOfNumber (int num)
+{
+if (num >= 0 && num <= 9 )
+{
+    System.Console.WriteLine($"{num}");
+}
+if (num >= 10 && num <= 99)
+{
+    int a = num % 10;
+    int b = num / 10;
+    System.Console.WriteLine($"{num} -> {b},{a}");
+}
+if (num >= 100 && num <= 999)
+{
+    int a = num % 10;
+    int b = num % 100 / 10;
+    int c = num / 100;
+    System.Console.WriteLine($"{num} -> {c},{b},{a}");
+}
+if (num >= 1000 && num <= 9999)
+{
+    int a = num % 10;
+    int b = num % 100 / 10;
+    int c = num % 1000 /100;
+    int d = num / 1000;
+    System.Console.WriteLine($"{num} -> {d},{c},{b},{a}");
+}
+if (num >= 10000 && num <= 99999)
+{
+    int a = num % 10;
+    int b = num % 100 / 10;
+    int c = num % 1000 /100;
+    int d = num % 10000 / 1000;
+    int e = num / 10000;
+    System.Console.WriteLine($"{num} -> {e},{d},{c},{b},{a}");
+}
+if (num >= 100000 && num <= 999999)
+{
+    int a = num % 10;
+    int b = num % 100 / 10;
+    int c = num % 1000 /100;
+    int d = num % 10000 / 1000;
+    int e = num % 100000 / 10000;
+    int f = num / 100000;
+    System.Console.WriteLine($"{num} -> {f},{e},{d},{c},{b},{a}");
+}
+
+}
+
+System.Console.WriteLine("Введите число");
+int number = Convert.ToInt32(Console.ReadLine());
+
+SeparationOfNumber(number);
