@@ -99,9 +99,10 @@ DecOrEd(number);
 
 */
 
-//Напишите программу, которая на вход принимает натуральное число N, а на выходе показывает его цифры через запятую.
+//4. Напишите программу, которая на вход принимает натуральное число N, а на выходе показывает его цифры через запятую.
 // 645 ->6,4,5    8->8    4567 ->4,5,6,7
 
+/*
 void SeparationOfNumber (int num)
 {
 if (num >= 0 && num <= 9 )
@@ -155,3 +156,39 @@ System.Console.WriteLine("Введите число");
 int number = Convert.ToInt32(Console.ReadLine());
 
 SeparationOfNumber(number);
+*/
+
+// 4. Вариант 2
+void CicrcleSeparationOfNumber(int num)
+{
+    if (num < 10)
+    {
+        System.Console.WriteLine(num);
+    }
+    else
+    {
+        while (num > 0)
+        {
+            int currentNum = num % 10;
+            num = num / 10;
+            if (num > 0)
+            {
+                System.Console.Write($"{currentNum},");
+            }
+            else
+            {
+                System.Console.Write(currentNum);
+            }
+        }
+    }
+}
+
+
+System.Console.WriteLine("Введите число");
+int number = Convert.ToInt32(Console.ReadLine());
+
+CicrcleSeparationOfNumber(number);
+
+
+
+
