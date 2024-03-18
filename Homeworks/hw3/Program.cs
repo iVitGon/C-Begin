@@ -118,6 +118,8 @@ System.Console.WriteLine(result);
 // Задача 3: Задайте массив из вещественных чисел с ненулевой дробной частью. Найдите разницу между 
 // максимальным и минимальным элементов массива
 
+/*
+
 double MaxValueArray(double [] array)
 {
     double max = array[0];
@@ -162,3 +164,90 @@ double resMin = MinValueArray(arr);
 System.Console.WriteLine(resMin);
 double difference = DifferenceMaxAndMinValue(resMax, resMin);
 System.Console.WriteLine(difference);
+
+*/
+
+// Задача 4**(не обязательно): Дано натуральное число в диапазоне от 1 до 100 000. Создайте массив, 
+// состоящий из цифр этого числа. Старший разряд числа должен располагаться на 0-м индексе 
+// массива, младший – на последнем. Размер массива должен быть равен количеству цифр.
+// 425 => [4 2 5]    8741 => [8 7 4 1]
+
+
+int FillRandomNumber()
+{
+    Random rnd = new Random();
+    int number = rnd.Next(1, 100000);
+    return number;
+}
+
+void PrintNumber(int value)
+{
+    System.Console.WriteLine($"Сгенерированный номер {value}");
+}
+
+int DetermineSize(int value)
+{
+    int size = 0;
+    if (value >= 1 && value < 10)
+    {
+        size = 1;
+    }
+    if (value >= 10 && value < 100)
+    {
+        size = 2;
+    }
+    if (value >= 100 && value < 1000)
+    {
+        size = 3;
+    }
+    if (value >= 1000 && value < 10000)
+    {
+        size = 4;
+    }
+    if (value >= 10000 && value <= 100000)
+    {
+        size = 5;
+    }
+    return size;
+}
+
+void PrintSize(int size)
+{
+    System.Console.WriteLine($"Размер массива {size}");
+}
+
+void FillArray(int[] array, int value)
+{
+    if (array.Length > 1)
+    {
+        for (int i = array.Length - 1; i > -1; i--)
+        {
+            array[i] = value % 10;
+            value = value / 10;
+
+        }
+    }
+    else
+    {
+        array[0] = value;
+    }
+
+}
+
+void PrintArray(int[] array)
+{
+    foreach (int e in array)
+    {
+        System.Console.Write($"{e} ");
+    }
+}
+
+int value = FillRandomNumber();
+PrintNumber(value);
+
+int size = DetermineSize(value);
+PrintSize(size);
+int[] array = new int[size];
+FillArray(array, value);
+PrintArray(array);
+
