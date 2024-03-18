@@ -63,6 +63,8 @@ System.Console.WriteLine(result);
 // Задача 2: Задайте массив на 10 целых чисел. Напишите программу, которая определяет 
 // количество чётных чисел в массиве.
 
+
+/*
 void FillRandomArray (int [] array)
 {
     Random rnd = new Random();
@@ -110,4 +112,53 @@ int result = SortOfEvenArray(arr);
 
 System.Console.WriteLine(result);
 
+*/
 
+
+// Задача 3: Задайте массив из вещественных чисел с ненулевой дробной частью. Найдите разницу между 
+// максимальным и минимальным элементов массива
+
+double MaxValueArray(double [] array)
+{
+    double max = array[0];
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] > max)
+        {
+            max = array[i];
+        }
+    }
+    return max;
+}
+
+double MinValueArray(double [] array)
+{
+    double min = array[0];
+    int i = 0;
+    while (i < array.Length)
+    {
+        if (array[i] < min)
+        {
+            min = array[i];
+            
+        }
+        i = i + 1;
+    }
+    return min;
+}
+
+double DifferenceMaxAndMinValue(double resMax, double resMin)
+{
+    double diff = resMax - resMin;
+    return diff;
+}
+
+
+double [] arr = {1.34, 45.65, 7.45, 16.76, 87.34, 0.21};
+
+double resMax = MaxValueArray(arr);
+System.Console.WriteLine(resMax);
+double resMin = MinValueArray(arr);
+System.Console.WriteLine(resMin);
+double difference = DifferenceMaxAndMinValue(resMax, resMin);
+System.Console.WriteLine(difference);
