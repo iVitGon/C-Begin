@@ -99,18 +99,18 @@ System.Console.WriteLine(countEven);
 // Задача1. Напишите программу, которая бесконечно запрашивает целые числа с консоли. 
 // Программа завершается при вводе символа ‘q’ или при вводе числа, сумма цифр которого чётная.
 
-void InputIntNumber()
+void InputIntNumber(int number, string symb)
 {
     while (true)
     {
-        System.Console.WriteLine("Введите число ");
-        int number = Convert.ToInt32(Console.ReadLine());
+        
         int i = 0;
 
         if (number % 2 != 0)
         {
             i++;
         }
+        
         else
         {
             break;
@@ -118,7 +118,9 @@ void InputIntNumber()
     }
 }
 
-//Console.WriteLine("Введите число" );
-//int number = Convert.ToInt32(Console.ReadLine());
+ System.Console.WriteLine("Введите число ");
+        int number = Convert.ToInt32(Console.ReadLine());
+        string symb = Console.ReadLine();
 
-InputIntNumber();
+InputIntNumber(number, symb);
+
