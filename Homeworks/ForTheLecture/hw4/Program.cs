@@ -94,7 +94,7 @@ System.Console.WriteLine();
 int countEven = CountEvenInArray(array);
 System.Console.WriteLine(countEven);
 
-*/
+
 
 // Задача1. Напишите программу, которая бесконечно запрашивает целые числа с консоли. 
 // Программа завершается при вводе символа ‘q’ или при вводе числа, сумма цифр которого чётная.
