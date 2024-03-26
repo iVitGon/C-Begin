@@ -86,4 +86,4 @@ int [,] matrix = FillMatrix(newMatrix, min, max);
 PrintMatrix(FillMatrix(newMatrix, min, max));
 System.Console.WriteLine();
 int [,] changeMatrix = ChangeRowsInMatrix(matrix);
-PrintMatrix(ChangeRowsInMatrix(matrix));
+PrintMatrix(changeMatrix);
