@@ -21,48 +21,49 @@ int [,] FillMatrix(int [,] matrix, int min, int max)
     return matrix; 
 }
 
-void PrintMatrix ( int [,] FillMatrix)
+void PrintMatrix ( int [,] array)
 {
-    for (int i = 0; i < FillMatrix.GetLength(0); i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        for (int j = 0; j < FillMatrix.GetLength(1); j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
-           System.Console.Write(FillMatrix[i,j] + " ");
+           System.Console.Write(array[i,j] + " ");
         }
         System.Console.WriteLine();
     }
 }
 
-int [,] ChangeRowsInMatrix (int [,] matrix)
+int [,] ChangeRowsInMatrix (int [,] array)
 {
-    int [] tempArray = new int [matrix.GetLength(1)];
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    int [] tempArray = new int [array.GetLength(1)];
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
             if (i == 0)
             {
-                tempArray[j] = matrix[i,j];
+                tempArray[j] = array[i,j];
             }
-            if (i == matrix.GetLength(0) - 1)
+            if (i == array.GetLength(0) - 1)
             {
-                matrix [0,j] = matrix[matrix.GetLength(0) - 1,j];
+                array [0,j] = array[array.GetLength(0) - 1,j];
+                array [i,j] = tempArray[j];
             }
 
         }
     } 
-     for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            if (i == matrix.GetLength(0) - 1)
-            {
-                matrix [i,j] = tempArray[j];
-            }
+    //  for (int i = 0; i < array.GetLength(0); i++)
+    // {
+    //     for (int j = 0; j < matrix.GetLength(1); j++)
+    //     {
+    //         if (i == matrix.GetLength(0) - 1)
+    //         {
+    //             matrix [i,j] = tempArray[j];
+    //         }
 
-        }
-    } 
-    return matrix; 
+    //     }
+    // } 
+    return array; 
 }
 
 
@@ -85,4 +86,4 @@ int [,] matrix = FillMatrix(newMatrix, min, max);
 PrintMatrix(FillMatrix(newMatrix, min, max));
 System.Console.WriteLine();
 int [,] changeMatrix = ChangeRowsInMatrix(matrix);
-PrintMatrix(changeMatrix);
+PrintMatrix(ChangeRowsInMatrix(matrix));
